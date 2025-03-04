@@ -11,7 +11,7 @@ const SchemaProducto = new mongoose.Schema({
         required: [true, "el nombre debe ser obligatorio"],
     },
     precio :{
-        type: [Decimal128, "el precio debe ser numero"] ,
+        type: [mongoose.Types.Decimal128, "el precio debe ser numerico"] ,
         default: 0,
         min: [0, 0, "los precios no puede ser negativos"],
     }  
